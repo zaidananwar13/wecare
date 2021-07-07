@@ -8,4 +8,9 @@ class Home extends BaseController
 	{
 		return view('user/index');
 	}
+
+	public function profile()
+	{
+		return view('user/profile');
+	}
 }
