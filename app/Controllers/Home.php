@@ -9,8 +9,11 @@ class Home extends BaseController
 		return view('user/index');
 	}
 
-	public function check()
-	{
+	public function profile() {
+		return view('user/profile');
+	}
+
+	public function check() {
 		return view('user/check');
 	}
 }
