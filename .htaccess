@@ -31,11 +31,7 @@ Options All -Indexes
 	# request to the front controller, index.php
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
-<<<<<<< HEAD
-	RewriteRule ^([\s\S]*)$ ./public/index.php/$1 [L,NC,QSA]
-=======
 	RewriteRule ^([\s\S]*)$ ./public/index.php/home/$1 [L,NC,QSA]
->>>>>>> 603402e74cf4d5b1921a4f21ef82d66ec33aa239
 
 	# Ensure Authorization header is passed along
 	RewriteCond %{HTTP:Authorization} .
