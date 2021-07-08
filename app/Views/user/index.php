@@ -144,25 +144,25 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Pola Olahraga</a></h4>
-              <p>Olahraga sangat penting menjaga daya tahan tubuh di masa pandemi, Mari atur jadwal olahraga mu </p>
+              <div class="icon"><i class="bx bx-receipt"></i></div>
+              <h4><a href="">Atur Pola</a></h4>
+              <p>Kami akan membantu kamu dalam menentukan pola hidup sehat, dimulai dari olahraga sampai jadwal makan</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Melakukan Survey</a></h4>
-              <p>Isilah survey berikut seuai kebiasaan yang kamu lakukan, lalu kami akan menampilkan rekomendasi kegiatan yang dapat kamu lakukan </p>
+              <div class="icon"><i class="ri-calendar-todo-line"></i></div>
+              <h4><a href="">Lihat Jadwal</a></h4>
+              <p>Melihat jadwal yang sudah di tentukan, sesuai dengan kuisioner pada atur pola</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Pola Makan</a></h4>
-              <p>Kami akan membantu kamu menentukan polamakan sehat kamu, sesuai taraf ekonomi yang kamu miliki</p>
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Konsultasi</a></h4>
+              <p>Kami akan memberikan pelayanan konsultasi yang akan di tangani oleh admin yang kompeten di bidangnya </p>
             </div>
           </div>
 
@@ -176,9 +176,9 @@
       <div class="container" data-aos="zoom-in">
 
         <div class="text-center">
-          <h3>Call To Action</h3>
+          <h3>Survey</h3>
           <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Call To Action</a>
+          <a class="cta-btn" href="#">Isi Survey</a>
         </div>
 
       </div>
