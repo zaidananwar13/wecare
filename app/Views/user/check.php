@@ -1,9 +1,3 @@
-<style>
-    .container{
-        display: flex;
-        justify-content: center;
-    }
-</style>
 <!doctype html>
 <html lang="en">
   <head>
@@ -32,6 +26,37 @@
     <!-- Template Main CSS File -->
     <link href="<?php echo base_url() ?>/assets/user/assets/css/style.css" rel="stylesheet">
 
+    <style>
+    html *{
+    -webkit-font-smoothing: antialiased;
+    }
+
+    .cta, h6 {
+        color : #fff;
+        padding : 4 4 4 4;
+        font-size: .75rem !important;
+        font-weight: 500;
+        font-family: Roboto,Helvetica,Arial,sans-serif;
+        line-height: 1.5em;
+        text-transform: uppercase;
+    }
+
+    input[type=text] {
+        width: 120%;
+        padding: 4px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #ccc;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+    }
+    
+    input[type=text]:focus {
+        border: 3px solid #87CEFA;
+    }
+
+    </style>
     <title>Survey </title>
   </head>
   <body>
@@ -45,41 +70,41 @@
             <div class="row">
 
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-            <div class="row g-3 align-items-center">
-                        <div class="col-xl-6 col-5">
-                            <h3><span>Nama</span></h3>
+            <div class="row align-items-center">
+                        <div class="col-3 col-auto">
+                            <h6><span>Nama</span></h6>
                         </div>
-                        <div class="col-xl-6 col-6">
-                            <input type="text" id="" name="" class="form-control" >
+                        <div class="col-auto col-6">
+                            <input type="text" id="" name="" class="input" >
                         </div>
                     </div>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
             <div class="row g-3 align-items-center">
-                        <div class="col-xl-6 col-5">
-                            <h3><span>Umur</span></h3>
+                        <div class="col-3 col-auto">
+                            <h6><span>Umur</span></h6>
                         </div>
-                        <div class="col-xl-6 col-6">
-                            <input type="text" id="" name="" class="form-control" >
+                        <div class="col-auto col-6">
+                            <input type="text" id="" name="" class="input" >
                         </div>
                     </div>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <div class="row g-3 align-items-center">
-                        <div class="col-xl-6 col-5">
-                            <h3><span>Jenis Kelamin</span></h3>
+                        <div class="col-3 col-auto">
+                            <h6><span>Jenis Kelamin</span></h6>
                         </div>
-                        <div class="col-xl-6 col-6">
-                            <input type="text" id="" class="form-control" >
+                        <div class="col-auto col-6">
+                            <input type="text" id="" class="input" >
                         </div>
                     </div>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
             <div class="row g-3 align-items-center">
-                        <div class="col-xl-6 col-5">
-                            <h3><span>Tingkat Ekonomi</span></h3>
+                        <div class="col-3 col-auto">
+                            <h6><span>Tingkat Ekonomi</span></h6>
                         </div>
-                        <div class="col-xl-6 col-6">
+                        <div class="col-auto col-6">
                             <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                                 <option selected>Pilih</option>
                                 <option value="">Sehat</option>
@@ -110,7 +135,6 @@
     <!-- BODY SUERVEY -->
     
     <section id="features" class="features">
-        
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Survey</h2>
