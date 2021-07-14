@@ -144,7 +144,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4><a href="">Konsultasi</a></h4>
-              <p>Kami akan memberikan pelayanan konsultasi yang akan di tangani oleh admin yang kompeten di bidangnya </p>
+              <p>Kami akan memberikan pelayanan konsultasi yang akan ditangani oleh admin yang kompeten di bidangnya </p>
             </div>
           </div>
 
