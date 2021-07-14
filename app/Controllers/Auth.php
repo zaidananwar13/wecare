@@ -47,6 +47,6 @@ class Auth extends BaseController
 	}
 
   public function verify() {
-    
+    require_once './auth.php';
   }
 }
