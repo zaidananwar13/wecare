@@ -456,7 +456,7 @@
                                 <td>1. Berapa kali anda mengonsumsi makanan instan dalam sehari? (tidak termasuk snack ringan)</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q1" id="q1" value="option1">
+                                        <input class="form-check-input" type="radio" name="q1" id="q1" value="2x">
                                         <label class="form-check-label" for="q1">
                                             2x
                                         </label>
@@ -464,7 +464,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q1" id="q1" value="option2">
+                                        <input class="form-check-input" type="radio" name="q1" id="q1" value="3x">
                                         <label class="form-check-label" for="q1">
                                             3x
                                         </label>
@@ -472,7 +472,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q1" id="q1" value="option3">
+                                        <input class="form-check-input" type="radio" name="q1" id="q1" value="4x">
                                         <label class="form-check-label" for="q1">
                                             4x
                                         </label>
@@ -480,7 +480,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q1" id="q1" value="option4">
+                                        <input class="form-check-input" type="radio" name="q1" id="q1" value="5x">
                                         <label class="form-check-label" for="q1">
                                             5x
                                         </label>
@@ -491,7 +491,7 @@
                                 <td>2. Berapa kali dalam sehari anda mengonsumsi makanan instan? snack?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q2" id="q2" value="option1">
+                                        <input class="form-check-input" type="radio" name="q2" id="q2" value="2x">
                                         <label class="form-check-label" for="q2">
                                             2x
                                         </label>
@@ -499,7 +499,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q2" id="q2" value="option2">
+                                        <input class="form-check-input" type="radio" name="q2" id="q2" value="3x">
                                         <label class="form-check-label" for="q2">
                                             3x
                                         </label>
@@ -507,7 +507,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q2" id="q2" value="option3">
+                                        <input class="form-check-input" type="radio" name="q2" id="q2" value="4x">
                                         <label class="form-check-label" for="q2">
                                             4x
                                         </label>
@@ -515,7 +515,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q2" id="q2" value="option4">
+                                        <input class="form-check-input" type="radio" name="q2" id="q2" value="5x">
                                         <label class="form-check-label" for="q2">
                                             5x
                                         </label>
@@ -526,7 +526,7 @@
                                 <td>3. Apakah jadwal makan anda teratur?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q3" id="q3" value="option1">
+                                        <input class="form-check-input" type="radio" name="q3" id="q3" value="ya">
                                         <label class="form-check-label" for="q3">
                                             Ya
                                         </label>
@@ -534,7 +534,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q3" id="q3" value="option4">
+                                        <input class="form-check-input" type="radio" name="q3" id="q3" value="tidak">
                                         <label class="form-check-label" for="q3">
                                             Tidak
                                         </label>
@@ -547,7 +547,7 @@
                                 <td>4. Bagaimana porsi makan anda yang dimakan setiap hari?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q4" id="q4" value="option1">
+                                        <input class="form-check-input" type="radio" name="q4" id="q4" value="1/2">
                                         <label class="form-check-label" for="q4">
                                             1/2 Piring
                                         </label>
@@ -555,7 +555,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q4" id="q4" value="option2">
+                                        <input class="form-check-input" type="radio" name="q4" id="q4" value="1">
                                         <label class="form-check-label" for="q4">
                                             1 Piring
                                         </label>
@@ -563,7 +563,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q4" id="q4" value="option3">
+                                        <input class="form-check-input" type="radio" name="q4" id="q4" value="2">
                                         <label class="form-check-label" for="q4">
                                             2 Piring
                                         </label>
@@ -571,7 +571,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q4" id="q4" value="option4">
+                                        <input class="form-check-input" type="radio" name="q4" id="q4" value="3">
                                         <label class="form-check-label" for="q4">
                                             3 Piring
                                         </label>
@@ -582,7 +582,7 @@
                                 <td>5. Kapan porsi makan anda yang paling banyak?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q5" id="q5" value="option1">
+                                        <input class="form-check-input" type="radio" name="q5" id="q5" value="pagi">
                                         <label class="form-check-label" for="q5">
                                             Pagi
                                         </label>
@@ -590,7 +590,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q5" id="q5" value="option2">
+                                        <input class="form-check-input" type="radio" name="q5" id="q5" value="siang">
                                         <label class="form-check-label" for="q5">
                                             Siang
                                         </label>
@@ -598,7 +598,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q5" id="q5" value="option3">
+                                        <input class="form-check-input" type="radio" name="q5" id="q5" value="malam">
                                         <label class="form-check-label" for="q5">
                                             Malam
                                         </label>
@@ -606,7 +606,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q5" id="q5" value="option4">
+                                        <input class="form-check-input" type="radio" name="q5" id="q5" value="ketiganya">
                                         <label class="form-check-label" for="q5">
                                             Ketiganya
                                         </label>
@@ -617,7 +617,7 @@
                                 <td>6. Makanan apa yang menjadi sumber makanan pokok keluarga?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q6" id="q6" value="option1">
+                                        <input class="form-check-input" type="radio" name="q6" id="q6" value="beras">
                                         <label class="form-check-label" for="q6">
                                             Beras
                                         </label>
@@ -625,7 +625,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q6" id="q6" value="option2">
+                                        <input class="form-check-input" type="radio" name="q6" id="q6" value="sagu">
                                         <label class="form-check-label" for="q6">
                                             Sagu
                                         </label>
@@ -633,7 +633,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q6" id="q6" value="option3">
+                                        <input class="form-check-input" type="radio" name="q6" id="q6" value="umbi">
                                         <label class="form-check-label" for="q6">
                                             Umbi-umbian
                                         </label>
@@ -641,7 +641,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q6" id="q6" value="option4">
+                                        <input class="form-check-input" type="radio" name="q6" id="q6" value="ketiganya">
                                         <label class="form-check-label" for="q6">
                                             Ketiganya
                                         </label>
@@ -652,7 +652,7 @@
                                 <td>7. Di antara sumber-sumber protein hewan berikut, manakah yang sering anda konsumsi?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q7" id="q7" value="option1">
+                                        <input class="form-check-input" type="radio" name="q7" id="q7" value="ikan">
                                         <label class="form-check-label" for="q7">
                                             Ikan
                                         </label>
@@ -660,7 +660,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q7" id="q7" value="option2">
+                                        <input class="form-check-input" type="radio" name="q7" id="q7" value="daging">
                                         <label class="form-check-label" for="q7">
                                             Daging
                                         </label>
@@ -668,7 +668,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q7" id="q7" value="option3">
+                                        <input class="form-check-input" type="radio" name="q7" id="q7" value="telur">
                                         <label class="form-check-label" for="q7">
                                             Telur
                                         </label>
@@ -676,7 +676,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q7" id="q7" value="option4">
+                                        <input class="form-check-input" type="radio" name="q7" id="q7" value="susu">
                                         <label class="form-check-label" for="q7">
                                             Susu
                                         </label>
@@ -687,7 +687,7 @@
                                 <td>8. Di antara sumber-sumber protein nabati berikut, manakah yang sering anda konsumsi?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q8" id="q8" value="option1">
+                                        <input class="form-check-input" type="radio" name="q8" id="q8" value="kacang">
                                         <label class="form-check-label" for="q8">
                                             Kacang-kacangan
                                         </label>
@@ -695,7 +695,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q8" id="q8" value="option2">
+                                        <input class="form-check-input" type="radio" name="q8" id="q8" value="tahu">
                                         <label class="form-check-label" for="q8">
                                             Tahu
                                         </label>
@@ -703,7 +703,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q8" id="q8" value="option3">
+                                        <input class="form-check-input" type="radio" name="q8" id="q8" value="sayur">
                                         <label class="form-check-label" for="q8">
                                             Sayuran
                                         </label>
@@ -711,7 +711,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q8" id="q8" value="option4">
+                                        <input class="form-check-input" type="radio" name="q8" id="q8" value="tempe">
                                         <label class="form-check-label" for="q8">
                                             Tempe
                                         </label>
@@ -722,7 +722,7 @@
                                 <td>9. Seberapa sering mengonsumsi makanan instan?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q9" id="q9" value="option1">
+                                        <input class="form-check-input" type="radio" name="q9" id="q9" value="setiap">
                                         <label class="form-check-label" for="q9">
                                             Setiap hari
                                         </label>
@@ -730,7 +730,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q9" id="q9" value="option2">
+                                        <input class="form-check-input" type="radio" name="q9" id="q9" value="kadang">
                                         <label class="form-check-label" for="q9">
                                             Kadang-kadang
                                         </label>
@@ -738,7 +738,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q9" id="q9" value="option3">
+                                        <input class="form-check-input" type="radio" name="q9" id="q9" value="jarang">
                                         <label class="form-check-label" for="q9">
                                             Jarang
                                         </label>
@@ -746,7 +746,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q9" id="q9" value="option4">
+                                        <input class="form-check-input" type="radio" name="q9" id="q9" value="tidak">
                                         <label class="form-check-label" for="q9">
                                             Tidak pernah
                                         </label>
@@ -757,7 +757,7 @@
                                 <td>10. Kapan anda mengonsumsi sayuran?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q10" id="q10" value="option1">
+                                        <input class="form-check-input" type="radio" name="q10" id="q10" value="setiap">
                                         <label class="form-check-label" for="q10">
                                             Setiap hari
                                         </label>
@@ -765,7 +765,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q10" id="q10" value="option2">
+                                        <input class="form-check-input" type="radio" name="q10" id="q10" value="kadang">
                                         <label class="form-check-label" for="q10">
                                             Kadang-kadang
                                         </label>
@@ -773,7 +773,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q10" id="q10" value="option3">
+                                        <input class="form-check-input" type="radio" name="q10" id="q10" value="jarang">
                                         <label class="form-check-label" for="q10">
                                             Jarang
                                         </label>
@@ -781,7 +781,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q10" id="q10" value="option4">
+                                        <input class="form-check-input" type="radio" name="q10" id="q10" value="tidak">
                                         <label class="form-check-label" for="q10">
                                             Tidak pernah
                                         </label>
@@ -792,7 +792,7 @@
                                 <td>11. Kapan anda mengonsumsi buah-buahan?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q11" id="q11" value="option1">
+                                        <input class="form-check-input" type="radio" name="q11" id="q11" value="setiap">
                                         <label class="form-check-label" for="q11">
                                             Setiap hari
                                         </label>
@@ -800,7 +800,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q11" id="q11" value="option2">
+                                        <input class="form-check-input" type="radio" name="q11" id="q11" value="kadang">
                                         <label class="form-check-label" for="q11">
                                             Kadang-kadang
                                         </label>
@@ -808,7 +808,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q11" id="q11" value="option3">
+                                        <input class="form-check-input" type="radio" name="q11" id="q11" value="jarang">
                                         <label class="form-check-label" for="q11">
                                             Jarang
                                         </label>
@@ -816,7 +816,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q11" id="q11" value="option4">
+                                        <input class="form-check-input" type="radio" name="q11" id="q11" value="tidak">
                                         <label class="form-check-label" for="q11">
                                             Tidak pernah
                                         </label>
@@ -827,7 +827,7 @@
                                 <td>12. Kapan anda mengonsumsi daging?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q12" id="q12" value="option1">
+                                        <input class="form-check-input" type="radio" name="q12" id="q12" value="setiap">
                                         <label class="form-check-label" for="q12">
                                             Setiap-hari
                                         </label>
@@ -835,7 +835,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q12" id="q12" value="option2">
+                                        <input class="form-check-input" type="radio" name="q12" id="q12" value="kadang">
                                         <label class="form-check-label" for="q12">
                                             Kadang-kadang
                                         </label>
@@ -843,7 +843,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q12" id="q12" value="option3">
+                                        <input class="form-check-input" type="radio" name="q12" id="q12" value="jarang">
                                         <label class="form-check-label" for="q12">
                                             Jarang
                                         </label>
@@ -851,7 +851,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q12" id="q12" value="option4">
+                                        <input class="form-check-input" type="radio" name="q12" id="q12" value="tidak">
                                         <label class="form-check-label" for="q12">
                                             Tidak pernah
                                         </label>
@@ -862,7 +862,7 @@
                                 <td>13. Kapan anda mengonsumsi ikan laut?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q13" id="q13" value="option1">
+                                        <input class="form-check-input" type="radio" name="q13" id="q13" value="setiap">
                                         <label class="form-check-label" for="q13">
                                             Setiap hari
                                         </label>
@@ -870,7 +870,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q13" id="q13" value="option2">
+                                        <input class="form-check-input" type="radio" name="q13" id="q13" value="kadang">
                                         <label class="form-check-label" for="q13">
                                             Kadang-kadang
                                         </label>
@@ -878,7 +878,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q13" id="q13" value="option3">
+                                        <input class="form-check-input" type="radio" name="q13" id="q13" value="jarang">
                                         <label class="form-check-label" for="q13">
                                             Jarang
                                         </label>
@@ -886,7 +886,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q13" id="q13" value="option4">
+                                        <input class="form-check-input" type="radio" name="q13" id="q13" value="tidak">
                                         <label class="form-check-label" for="q13">
                                             Tidak Pernah
                                         </label>
@@ -897,7 +897,7 @@
                                 <td>14. Berapa lama frekuensi makan anda dalam sehari?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q14" id="q14" value="option1">
+                                        <input class="form-check-input" type="radio" name="q14" id="q14" value="2">
                                         <label class="form-check-label" for="q14">
                                             2 Jam
                                         </label>
@@ -905,7 +905,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q14" id="q14" value="option2">
+                                        <input class="form-check-input" type="radio" name="q14" id="q14" value="3">
                                         <label class="form-check-label" for="q14">
                                             3 Jam
                                         </label>
@@ -913,7 +913,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q14" id="q14" value="option3">
+                                        <input class="form-check-input" type="radio" name="q14" id="q14" value="4">
                                         <label class="form-check-label" for="q14">
                                             4 Jam
                                         </label>
@@ -921,7 +921,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q14" id="q14" value="option4">
+                                        <input class="form-check-input" type="radio" name="q14" id="q14" value="5">
                                         <label class="form-check-label" for="q14">
                                             5-6 Jam
                                         </label>
@@ -932,7 +932,7 @@
                                 <td>15. Kegiatan apa yang sering anda lakukan ketika anda selesai makan?</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="option1">
+                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="tidur">
                                         <label class="form-check-label" for="q15">
                                             Tidur
                                         </label>
@@ -940,7 +940,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="option2">
+                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="belajar">
                                         <label class="form-check-label" for="q15">
                                             Belajar
                                         </label>
@@ -948,7 +948,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="option3">
+                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="nonton">
                                         <label class="form-check-label" for="q15">
                                             Menonton
                                         </label>
@@ -956,7 +956,7 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="option4">
+                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="berat">
                                         <label class="form-check-label" for="q15">
                                             Pekerjaan Berat
                                         </label>
