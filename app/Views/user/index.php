@@ -137,7 +137,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4><a href="">Konsultasi</a></h4>
-              <p>Kami akan memberikan pelayanan konsultasi yang akan di tangani oleh admin yang kompeten di bidangnya </p>
+              <p>Kami akan memberikan pelayanan konsultasi yang akan ditangani oleh admin yang kompeten di bidangnya </p>
             </div>
           </div>
 
@@ -146,18 +146,6 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Survey</h3>
-          <p> Silahkan isi Survey ini, semgoga survey ini dapat membantu kamu dalam memperhatikan dan memperbaiki pola hidup mu</p>
-          <a class="cta-btn" href="<?php echo base_url() ?>/check">Isi Survey</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
