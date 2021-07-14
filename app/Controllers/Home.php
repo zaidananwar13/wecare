@@ -16,7 +16,4 @@ class Home extends BaseController
 	public function check() {
 		return view('user/check');
 	}
-	public function login() {
-		return view('user/login');
-	}
 }
