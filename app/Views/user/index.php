@@ -153,18 +153,6 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="text-center">
-          <h3>Survey</h3>
-          <p> Silahkan isi Survey ini, semgoga survey ini dapat membantu kamu dalam memperhatikan dan memperbaiki pola hidup mu</p>
-          <a class="cta-btn" href="<?php echo base_url() ?>/check">Isi Survey</a>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
 
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
