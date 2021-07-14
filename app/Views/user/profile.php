@@ -420,7 +420,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+      <a href="#about" class="get-started-btn scrollto">Logout</a>
 
     </div>
   </header><!-- End Header -->
@@ -434,7 +434,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>User Details</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="<?php echo base_url('profile')?>">Home</a></li>
             <li>User Details</li>
           </ol>
         </div>
@@ -471,15 +471,9 @@
                   <div class="profile-tabs">
                     <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
                       <li class="nav-item" style="width: 140px; lenght: 100px; padding: 7px;">
-                        <a class="nav-link active" style="background-color: #EA6B9D;" href="#studio" role="tab" data-toggle="tab">
+                        <a class="nav-link active" style="background-color: #EA6B9D;" href="<?php echo base_url('check')?>" role="tab" data-toggle="tab">
                         <div class="icon"><i class="bx bx-receipt"></i></div>
                               Atur Pola
-                          </a>
-                      </li>
-                      <li class="nav-item" style="width: 140px; padding: 7px;">
-                        <a class="nav-link active" href="#studio" role="tab" data-toggle="tab">
-                          <div class="icon"><i class="ri-calendar-todo-line"></i></div>
-                              Jadwal Makan
                           </a>
                       </li>
                     </ul>
@@ -494,7 +488,7 @@
             <div class="portfolio-info">
               <h3>Informasi Kesehatan</h3>
               <ul>
-                <li><strong>Info 1</strong>: Sehat</li>
+                <li><strong>Info 1</strong>: <?= $status?></li>
                 <li><strong>Info 2</strong>: Sehat</li>
                 <li><strong>Info 3</strong>: Sehat</li>
                 <li><strong>Info 4</strong>: <a href="#">www.example.com</a></li>

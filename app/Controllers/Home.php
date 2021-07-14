@@ -257,17 +257,28 @@ class Home extends BaseController
 		
 		if ($score > 0){
 			if ($score <= 20){
-				$status = "Sehat";
+				$answer = [
+					'status' => 'Sehat'
+				];
 			} else if ($score <= 40){
-				$status = "Kurang Sehat";
+				$answer = [
+					'status' => 'Kurang Sehat'
+				];
+				// $status = "Kurang Sehat";
 			} else{
-				$status = "Tidak sehat";
+				$answer = [
+					'status' => 'Tidak Sehat'
+				];
+				// $status = "Tidak sehat";
 			}
 		}else{
-			$status = "Gagal";
+			$answer = [
+				'status' => 'Gagal'
+			];
+			// $status = "Gagal";
 		}
 		
-		echo $status;
+		return view('user/profile', $answer);
 
 		//DBmodel ($status)
 	}
