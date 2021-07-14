@@ -14,6 +14,10 @@ class Home extends BaseController
 	}
 
 	public function check() {
-		return view('user/check');
+		return view('user/check2');
+	}
+
+	public function survey_action(){
+		
 	}
 }
