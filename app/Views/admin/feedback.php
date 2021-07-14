@@ -1,3 +1,5 @@
+<?php echo password_hash("asd123", PASSWORD_DEFAULT); die; ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -1,3 +1,7 @@
+<?php
+  // echo checkReplyStatus(2); die;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -43,51 +47,32 @@
                         </tr>
                       </thead>
                       <tbody>
+                        <?php $i = 1; foreach($consultations as $consult) : ?>
                         <tr>
-                          <td> 1 </td>
+                          <td> <?php echo $i; ?> </td>
                           <td class="py-1">
-                            <img src="<?php echo base_url(); ?>/assets/admin/assets/images/faces-clipart/pic-1.png" alt="image" />
+                            <img src="<?php echo base_url().'/'. generateRandImage(); ?>" alt="image" />
                           </td>
-                          <td> Herman Beck </td>
+                          <td> <?php echo getUserName($consult['id_user']); ?> </td>
                           <td class="question">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero tempore sunt autem ut? Tempore laborum eligendi quasi provident molestiae dicta, consequatur praesentium nobis odit, autem in harum ipsum veritatis.
+                            <?php echo $consult["pertanyaan"] ?>
                           </td>
-                          <td> <i class="mdi mdi-bell mr-2 text-success"></i> Dibalas </td>
+                          <td><?php echo checkReplyStatus($consult['id_konsultasi']) ?></td>
                           <td class="dropdown"> 
                             <i class="mdi mdi-dots-vertical " id="profileDropdown"  data-toggle="dropdown" aria-expanded="false"></i>
                             
                             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                              <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalKonsul-1">
+                              <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalKonsul-<?php echo $consult['id_konsultasi'] ?>">
                                 <i class="mdi mdi-eye mr-2 text-success" ></i> Lihat Feedback </a>
                               <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">
+                              <a class="dropdown-item" onclick="return confirm('Are you wish to delete the data?')"
+                              href="<?php echo csite_url('dashboard/konsultasi/delete/' . $consult['id_konsultasi']); ?>">
                                 <i class="mdi mdi-delete mr-2 text-danger"></i> Hapus </a>
                             </div>
                           </td>
                         </tr>
                         
-                        <tr>
-                          <td> 2 </td>
-                          <td class="py-1">
-                            <img src="<?php echo base_url(); ?>/assets/admin/assets/images/faces-clipart/pic-2.png" alt="image" />
-                          </td>
-                          <td> Herman Beck </td>
-                          <td class="question">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero tempore sunt autem ut? Tempore laborum eligendi quasi provident molestiae dicta, consequatur praesentium nobis odit, autem in harum ipsum veritatis.
-                          </td>
-                          <td> <i class="mdi mdi-bell-ring mr-2 text-danger"></i> Queue </td>
-                          <td class="dropdown"> 
-                            <i class="mdi mdi-dots-vertical " id="profileDropdown"  data-toggle="dropdown" aria-expanded="false"></i>
-                            
-                            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                              <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalKonsul-1">
-                                <i class="mdi mdi-eye mr-2 text-success" ></i> Lihat Feedback </a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">
-                                <i class="mdi mdi-delete mr-2 text-danger"></i> Hapus </a>
-                            </div>
-                          </td>
-                        </tr>
+                        <?php $i++; endforeach; ?>
                       </tbody>
                     </table>
                   </div>
@@ -96,86 +81,85 @@
             </div>
           
           <!-- Modal -->
-          <div class="modal fade" id="modalKonsul-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <i class="mdi mdi-close-circle mr-2 text-primary btn-close" data-bs-dismiss="modal" aria-label="Close"></i>
-                </div>
-                <div class="modal-body">
+          <?php foreach($consultations as $consult) : ?>
+            <div class="modal fade" id="modalKonsul-<?php echo $consult['id_konsultasi'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Data Feedback</h5>
+                    <i class="mdi mdi-close-circle mr-2 text-primary btn-close" data-bs-dismiss="modal" aria-label="Close"></i>
+                  </div>
+                  <div class="modal-body">
 
-                <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    
-                    <div class="row">
-                      <button type="button" class="btn btn-xs btn-gradient-primary btn-rounded btn-icon ml-5 mr-3">
-                          <i class="mdi mdi-plus"></i>
-                      </button>
+                  <div class="col-lg-12 grid-margin stretch-card">
+                    <div class="card">
+                      
+                      <div class="row">
+                        <a href="<?php echo csite_url('dashboard/feedback/add/' . $consult['id_konsultasi']) ?>">
+                          <button type="button" class="btn btn-xs btn-gradient-primary btn-rounded btn-icon ml-5 mr-3">
+                              <i class="mdi mdi-plus"></i>
+                          </button>
+                        </a>
 
-                      <h5 class="mt-auto mb-auto">Add New</h5>
-                    </div>
+                        <h5 class="mt-auto mb-auto">Add New</h5>
+                      </div>
 
-                    <div class="card-body">
-
-                      <h4 class="card-title">Data Feedback</h4>
-                      </p>
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th> Date </th>
-                            <th> Admin </th>
-                            <th> Judul </th>
-                            <th> Balasan </th>
-                            <th> Action </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td> May 15, 2015 </td>
-                            <td class="py-1">
-                              <img src="<?php echo base_url() ?>/assets/admin/assets/images/faces-clipart/pic-1.png" alt="image" />
-                            </td>
-                            <td> Herman Beck </td>
-                            <td class="question">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero corrupti, doloremque cumque provident eum magnam dicta accusantium fugit, exercitationem est eius et obcaecati fuga quaerat necessitatibus dolor qui id distinctio!
-                            </td>
-                            <td>
-                              <button type="button" class="btn btn-info btn-opt-2">Edit</button>
-                            </td>
-                            <td>
-                              <button type="button" class="btn btn-danger btn-opt">Delete</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td> July 1, 2015 </td>
-                            <td class="py-1">
-                              <img src="<?php echo base_url() ?>/assets/admin/assets/images/faces-clipart/pic-2.png" alt="image" />
-                            </td>
-                            <td> Messsy Adam </td>
-                            <td class="question">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero corrupti, doloremque cumque provident eum magnam dicta accusantium fugit, exercitationem est eius et obcaecati fuga quaerat necessitatibus dolor qui id distinctio!
-                            </td>
-                            <td>
-                              <button type="button" class="btn btn-info btn-opt-2">Edit</button>
-                            </td>
-                            <td>
-                              <button type="button" class="btn btn-danger btn-opt">Delete</button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="card-body">
+                        </p>
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th> Date </th>
+                              <th> Admin </th>
+                              <th> Balasan </th>
+                              <th> Action </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <?php $feeds = getFeed($consult['id_konsultasi']); if(count($feeds) != 0) : ?>
+                            <?php foreach($feeds as $feed) : ?>
+                                <tr>
+                                  <td> <?php echo $feed['tanggal'] ?> </td>
+                                  <td class="py-1">
+                                    <img class="mr-3" src="<?php echo base_url().'/'. generateRandImage(); ?>" alt="image" />
+                                    <?php echo getAdminName($feed['id_admin']); ?>
+                                  </td>
+                                  <td class="question mt-3">
+                                    <?php echo $feed['balasan'] ?>
+                                  </td>
+                                  <td>
+                                    <a href="<?php echo csite_url('dashboard/feedback/edit/' . $feed['id_konsultasi'] . '/' . $feed['id_balasan']) ?>">                                      
+                                      <button type="button" class="btn btn-info btn-opt-2">Edit</button>
+                                    </a>
+                                  </td>
+                                  <td>
+                                    <a onclick="return confirm('Are you wish to delete the data?')" href="<?php echo csite_url('dashboard/feedback/delete/' . $feed['id_konsultasi'] . '/' . $feed['id_balasan']) ?>">   
+                                      <button type="button" class="btn btn-danger btn-opt">Delete</button>
+                                    </a>
+                                  </td>
+                                </tr>
+                            <?php endforeach; ?>
+                            
+                            <?php else: ?>
+                                <tr>
+                                  <td class="text-center text-danger" colspan="5"><h5>Feedback  belum diberikan!</h5></td>
+                                </tr>
+                              <?php endif; ?>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+
+          <?php endforeach; ?>
 
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
