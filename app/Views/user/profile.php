@@ -387,7 +387,7 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">WeCare<span>.</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="<?php echo base_url() ?>/assets/user/assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -470,15 +470,15 @@
                 <div class="col-md-6 ml-auto mr-auto">
                   <div class="profile-tabs">
                     <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
-                      <li class="nav-item" style="width: 140px; padding: 7px;">
+                      <li class="nav-item" style="width: 140px; lenght: 100px; padding: 7px;">
                         <a class="nav-link active" style="background-color: #EA6B9D;" href="#studio" role="tab" data-toggle="tab">
-                          <i class="material-icons">post_add</i>
+                        <div class="icon"><i class="bx bx-receipt"></i></div>
                               Atur Pola
                           </a>
                       </li>
                       <li class="nav-item" style="width: 140px; padding: 7px;">
                         <a class="nav-link active" href="#studio" role="tab" data-toggle="tab">
-                          <i class="material-icons">event</i>
+                          <div class="icon"><i class="ri-calendar-todo-line"></i></div>
                               Jadwal Makan
                           </a>
                       </li>
@@ -521,14 +521,14 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Gp<span>.</span></h3>
+              <h3>WeCare<span>.</span></h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+               Jl. Umban Sari ( Patin ) No. 1, <br>
+               Riau 28265, Indonesia<br><br>
+                <strong>Phone:</strong> +62 76153939<br>
+                <strong>Email:</strong> info@pcr.ac.id<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -561,16 +561,6 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
         </div>
       </div>
     </div>
