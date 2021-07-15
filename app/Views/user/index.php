@@ -50,7 +50,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#about" class="get-started-btn scrollto">Log In</a>
+      <a href="auth/user" class="get-started-btn scrollto">Log In</a>
 
     </div>
   </header><!-- End Header -->

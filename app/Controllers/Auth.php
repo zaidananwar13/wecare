@@ -47,6 +47,44 @@ class Auth extends BaseController
 	}
 
   public function verify() {
-    require_once './auth.php';
+    require_once  'vendor/autoload.php';
+
+
+    $client = new \Google\Client();
+    $client->setAuthConfig('client_secret.json');
+    $client->setScopes([
+      "https://www.googleapis.com/auth/plus.login",
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile",
+      "https://www.googleapis.com/auth/plus.me"
+    ]);
+    $client->setRedirectUri("http://localhost/wecare/auth/verify");
+
+    if(!isset($_GET['code'])) {
+      $auth_url = $client->createAuthUrl();
+
+      header('Location: '.  filter_var($auth_url, FILTER_SANITIZE_URL)); die;
+    }else {
+
+      $client->fetchAccessTokenWithAuthCode($_GET['code']);
+      $_SESSION['access_token'] = $client->getAccessToken();
+
+      try {
+        $plus = new \Google_Service_OAuth2($client);
+        $_SESSION['access_profile'] = $plus->userinfo->get();
+
+      }catch(\Exception $e) {
+        echo $e->__toString();
+
+        $_SESSION['access_token'] = "";
+        die;
+      }
+
+      echo "<b> Controller/Auth.php line: 83 </b><br>";
+      echo "Kalo mau lanjut hapus ini ya :)"; die;
+
+      header('Location: ??');
+    }
+
   }
 }

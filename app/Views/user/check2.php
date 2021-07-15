@@ -963,6 +963,41 @@
                                     </div>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>15. Kegiatan apa yang sering anda lakukan ketika anda selesai makan?</td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="tidur">
+                                        <label class="form-check-label" for="q15">
+                                            Tidur
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="belajar">
+                                        <label class="form-check-label" for="q15">
+                                            Belajar
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="nonton">
+                                        <label class="form-check-label" for="q15">
+                                            Menonton
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="berat">
+                                        <label class="form-check-label" for="q15">
+                                            Pekerjaan Berat
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </div>
                     <button type="submit" class="btn-dark">Submit</button>
