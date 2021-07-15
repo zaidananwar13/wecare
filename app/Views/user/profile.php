@@ -489,7 +489,7 @@
               <h3>Informasi Kesehatan</h3>
               <ul>
                 <li><strong>Info 1</strong>: <?= $status?></li>
-                <li><strong>Info 2</strong>: Sehat</li>
+                <li><strong>Info 2</strong>: <?= $status?></li>
                 <li><strong>Info 3</strong>: Sehat</li>
                 <li><strong>Info 4</strong>: <a href="#">www.example.com</a></li>
               </ul>

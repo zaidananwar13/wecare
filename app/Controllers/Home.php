@@ -19,7 +19,9 @@ class Home extends BaseController
 
 	public function survey_action(){
 		$score = 0;
+		$score2 = 0;
 		$status = "";
+		$statusku = "";
 		$q1 = $this->request->getPost('q1');
 		$q2 = $this->request->getPost('q2');
 		$q3 = $this->request->getPost('q3');
@@ -35,6 +37,9 @@ class Home extends BaseController
 		$q13 = $this->request->getPost('q13');
 		$q14 = $this->request->getPost('q14');
 		$q15 = $this->request->getPost('q15');
+		$q16 = $this->request->getPost('q16');
+		$q17 = $this->request->getPost('q17');
+		$q18 = $this->request->getPost('q18');
 
 		switch($q1){
 			case "2x":
@@ -254,7 +259,48 @@ class Home extends BaseController
 				$score += 2;
 				break;
 		}
-		
+		switch($q16){
+			case "tidak":
+				$score2 += 4;
+				break;
+			case "jarang":
+				$score2 += 3;
+				break;
+			case "kadang":
+				$score2 += 2;
+				break;
+			case "sering":
+				$score2 += 1;
+				break;
+		}
+		switch($q17){
+			case "singkat":
+				$score2 += 4;
+				break;
+			case "sedang":
+				$score2 += 3;
+				break;
+			case "panjang":
+				$score2 += 2;
+				break;
+			case "sangat":
+				$score2 += 1;
+				break;
+		}
+		switch($q18){
+			case "ringan":
+				$score2 += 4;
+				break;
+			case "sedang":
+				$score2 += 3;
+				break;
+			case "agak":
+				$score2 += 2;
+				break;
+			case "berat":
+				$score2 += 1;
+				break;
+		}
 		if ($score > 0){
 			if ($score <= 20){
 				$answer = [
@@ -278,8 +324,31 @@ class Home extends BaseController
 			// $status = "Gagal";
 		}
 		
-		return view('user/profile', $answer);
+		if ($score2 > 0){
+			if ($score2 <= 6){
+				$answer2 = [
+					'statusku' => 'Sehat'
+				];
+			} else if ($score2 <= 10){
+				$answer2 = [
+					'statusku' => 'Kurang Sehat'
+				];
+				// $statusku = "Kurang Sehat";
+			} else{
+				$answer2 = [
+					'statusku' => 'Tidak Sehat'
+				];
+				// $status = "Tidak sehat";
+			}
+		}else{
+			$answer2 = [
+				'statusku' => 'Gagal'
+			];
+			// $status = "Gagal";
+		}
+		return view('user/profile', $answer, $answer2);
 
 		//DBmodel ($status)
 	}
+	
 }

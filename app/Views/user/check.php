@@ -162,7 +162,7 @@
                 <div class="mainform">
                     <div class="section-title">
                         <h2>Survey</h2>
-                        <p>Body Survey</p>
+                        <p>Survey Pola makan </p>
                     </div>
                     <div class="row">
                         <div class="col-auto col-7">
@@ -472,6 +472,71 @@
                                 <label class="form-check-label" for="inlineRadio2">Lainnya</label>
                             </div>
                         </div>
+
+                        <div class="col-auto col-7">
+                            <p>16. Berapa kali kah kamu melakukan olahraga dalam 1 minggu </p>
+                        </div>
+                        <div class="col-auto col-auto">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="">
+                                <label class="form-check-label" for="">Tidak pernah</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="">
+                                <label class="form-check-label" for="">1/2 kali</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="" value="">
+                                <label class="form-check-label" for="inlineRadio3">3-5 kali</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="" value="">
+                                <label class="form-check-label" for="inlineRadio3">6-7 kali</label>
+                            </div>
+                        </div>
+                        <div class="col-auto col-7">
+                            <p>17. Berapa lama durasi setiap anda melakukan olahraga  </p>
+                        </div>
+                        <div class="col-auto col-auto">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="">
+                                <label class="form-check-label" for="">< 10 menit</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="">
+                                <label class="form-check-label" for="">10-19 menit</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="" value="">
+                                <label class="form-check-label" for="inlineRadio3">20-29 menit</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="" value="">
+                                <label class="form-check-label" for="inlineRadio3">> 30 menit</label>
+                            </div>
+                        </div>
+                        <div class="col-auto col-7">
+                            <p>18. Seberapa besar intensitas anda setiap anda melakukan olahraga  </p>
+                        </div>
+                        <div class="col-auto col-auto">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="">
+                                <label class="form-check-label" for="">Ringan</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="">
+                                <label class="form-check-label" for="">Sedang</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="" value="">
+                                <label class="form-check-label" for="inlineRadio3">Agak berat</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="" id="" value="">
+                                <label class="form-check-label" for="inlineRadio3">Berat</label>
+                            </div>
+                        </div>
+
                         <div class="butt">
                             <button class="btn btn-primary" type="submit">Submit form</button>
                         </div>

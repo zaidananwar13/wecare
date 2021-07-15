@@ -963,6 +963,111 @@
                                     </div>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>16. Berapa kali kah kamu melakukan olahraga dalam 1 minggu</td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q16" id="q16" value="tidak">
+                                        <label class="form-check-label" for="q16">
+                                            Tidak pernah
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q16" id="q16" value="jarang">
+                                        <label class="form-check-label" for="q16">
+                                            1/2 kali
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q16" id="q16" value="kadang">
+                                        <label class="form-check-label" for="q16">
+                                            3-5 kali
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q16" id="q16" value="sering">
+                                        <label class="form-check-label" for="q16">
+                                            6-7 kali
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>17. Berapa lama durasi setiap anda melakukan olahraga </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q17" id="q17" value="singkat">
+                                        <label class="form-check-label" for="q17">
+                                            < 10 menit
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q17" id="q17" value="sedang">
+                                        <label class="form-check-label" for="q17">
+                                            10-19 menit
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q17" id="q17" value="panjang">
+                                        <label class="form-check-label" for="q17">
+                                            20-29 menit
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q17" id="q17" value="sangat">
+                                        <label class="form-check-label" for="q17">
+                                            > 30 menit
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18. Seberapa besar intensitas anda setiap anda melakukan olahraga </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q18" id="q18" value="ringan">
+                                        <label class="form-check-label" for="q18">
+                                            Ringan
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q18" id="q18" value="sedang">
+                                        <label class="form-check-label" for="q18">
+                                            Sedang
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q18" id="q18" value="agak">
+                                        <label class="form-check-label" for="q18">
+                                            Agak berat
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q18" id="q18" value="berat">
+                                        <label class="form-check-label" for="q18">
+                                            Berat
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
                         </table>
                     </div>
                     <button type="submit" class="btn-dark">Submit</button>

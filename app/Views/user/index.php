@@ -56,9 +56,9 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
-      <a href="#about" class="get-started-btn scrollto">Log In</a>
-
+      <?php if(!isset($loginButton)): ?>
+      <a href="<?php $loginButton; ?>" class="get-started-btn scrollto">Log In</a>
+      <?php endif; ?>
     </div>
   </header><!-- End Header -->
 
