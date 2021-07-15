@@ -10,7 +10,10 @@ class Home extends BaseController
 	}
 
 	public function profile() {
-		return view('user/profile');
+		$ans = [
+			'status' => null
+		];
+		return view('user/profile', $ans);
 	}
 
 	public function check() {

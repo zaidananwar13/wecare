@@ -470,7 +470,7 @@
                 <div class="col-md-6 ml-auto mr-auto">
                   <div class="profile-tabs">
                     <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
-                      <li class="nav-item" style="width: 140px; lenght: 100px; padding: 7px;">
+                      <li class="nav-item" style="width: 140px; padding: 7px;">
                         <a class="nav-link active" style="background-color: #EA6B9D;" href="<?php echo base_url('check')?>" role="tab" data-toggle="tab">
                         <div class="icon"><i class="bx bx-receipt"></i></div>
                               Atur Pola
