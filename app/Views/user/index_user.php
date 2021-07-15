@@ -75,11 +75,11 @@
         </div>
       </div>
 
-      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+      <!-- <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
         <div class="col-lg-3">
           <button class="btn btn-warning">Get Started</button>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section><!-- End Hero -->
@@ -129,7 +129,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-receipt"></i></div>
-              <h4><a href="">Atur Pola</a></h4>
+              <h4><a href="<?php echo base_url('profile')?>">Atur Pola</a></h4>
               <p>Kami akan membantu kamu dalam menentukan pola hidup sehat, dimulai dari olahraga sampai jadwal makan</p>
             </div>
           </div>
@@ -137,7 +137,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="ri-calendar-todo-line"></i></div>
-              <h4><a href="">Lihat Jadwal</a></h4>
+              <h4><a href="#">Lihat Jadwal</a></h4>
               <p>Melihat jadwal yang sudah di tentukan, sesuai dengan kuisioner pada atur pola</p>
             </div>
           </div>
@@ -145,7 +145,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Konsultasi</a></h4>
+              <h4><a href="#contact">Konsultasi</a></h4>
               <p>Kami akan memberikan pelayanan konsultasi yang akan ditangani oleh admin yang kompeten di bidangnya </p>
             </div>
           </div>
@@ -364,14 +364,14 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Complaint" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Your complaint has been sent. Stay tuned!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Send</button></div>
             </form>
 
           </div>

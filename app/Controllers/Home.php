@@ -6,7 +6,7 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		#session here
+		#session check here
 		// return view('user/index');
 		return view('user/index_user');
 	}
