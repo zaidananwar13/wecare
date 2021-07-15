@@ -5,13 +5,13 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Gp Bootstrap Template</title>
+  <title>WeCare</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?php echo base_url() ?>/assets/user/assets/img/favicon.png" rel="icon">
-  <link href="<?php echo base_url() ?>/assets/user/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?php echo base_url() ?>/assets/user/assets/img/w_logo.png" rel="icon">
+  <link href="<?php echo base_url() ?>/assets/user/assets/img/w_logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -276,10 +276,6 @@
     }
 
     /* dropdown */
-
-
-
-
     .dropdown-menu {
         position: absolute;
         top: 100%;
@@ -315,7 +311,6 @@
         will-change: transform;
         transition: transform .15s linear;
     }
-
 
     .dropdown-menu .dropdown-item, .dropdown-menu li>a {
         position: relative;
@@ -387,35 +382,19 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">WeCare<span>.</span></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="<?php echo base_url('index')?>">WeCare<span>.</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="<?php echo base_url() ?>/assets/user/assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto active" href="<?php echo base_url('index');?>">Home</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">User Details</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href=" <?php echo base_url('index')?>#about">About</a></li>
+          <li><a class="nav-link scrollto" href="<?php echo base_url('index')?>#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="<?php echo base_url('index')?>#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="<?php echo base_url('index')?>#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="<?php echo base_url('index')?>#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -434,7 +413,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>User Details</h2>
           <ol>
-            <li><a href="<?php echo base_url('profile')?>">Home</a></li>
+            <li><a href="<?php echo base_url('index')?>">Home</a></li>
             <li>User Details</li>
           </ol>
         </div>
@@ -490,14 +469,16 @@
               <ul>
                 <li><strong>Info 1</strong>: <?= $status?></li>
                 <li><strong>Info 2</strong>: <?= $status?></li>
-                <li><strong>Info 3</strong>: Sehat</li>
-                <li><strong>Info 4</strong>: <a href="#">www.example.com</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
+              <h2>Kenapa kesehatan itu penting?</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Kesehatan adalah suatu hal yang mendasar dalam hidup manusia.
+                Banyak orang sakit dan keluarganya yang mengorbankan segala harta benda
+                mereka untuk mencari kesembuhan. Begitu pentingnya arti kesehatan
+                sehingga ada orang memilih lebih baik mati daripada hidup tidak sehat dan
+                tidak dapat melakukan apa-apa 
               </p>
             </div>
           </div>

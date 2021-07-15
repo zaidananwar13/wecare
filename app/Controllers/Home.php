@@ -6,10 +6,13 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		return view('user/index');
+		#session here
+		// return view('user/index');
+		return view('user/index_user');
 	}
 
 	public function profile() {
+		#dbmodel check ans
 		$ans = [
 			'status' => null
 		];
@@ -349,7 +352,8 @@ class Home extends BaseController
 			];
 			// $status = "Gagal";
 		}
-		return view('user/profile', $answer, $answer2);
+		return view('user/profile', $answer, $answer2); //temporary
+		// db insert or update if exist
 
 		//DBmodel ($status)
 	}

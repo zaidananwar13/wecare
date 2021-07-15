@@ -49,6 +49,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto " href="<?php echo base_url('profile')?>">User Details</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
@@ -58,7 +59,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       <?php if(!isset($loginButton)): ?>
-      <a href="<?php $loginButton; ?>" class="get-started-btn scrollto">Login</a>
+      <a href="<?php $loginButton; ?>" class="get-started-btn scrollto">Logout</a>
       <?php endif; ?>
     </div>
   </header><!-- End Header -->
