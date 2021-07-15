@@ -388,8 +388,8 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="<?php echo base_url('index');?>">Home</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">User Details</a></li>
+          <li><a class="nav-link scrollto" href="<?php echo base_url('index');?>">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#portfolio">User Details</a></li>
           <li><a class="nav-link scrollto" href=" <?php echo base_url('index')?>#about">About</a></li>
           <li><a class="nav-link scrollto" href="<?php echo base_url('index')?>#services">Services</a></li>
           <li><a class="nav-link scrollto" href="<?php echo base_url('index')?>#testimonials">Testimonials</a></li>
