@@ -11,6 +11,13 @@ class Home extends BaseController
 		return view('user/index_user');
 	}
 
+	public function index2()
+	{
+		#session check here
+		// return view('user/index');
+		return view('user/index');
+	}
+
 	public function profile() {
 		#dbmodel check ans
 		$ans = [
