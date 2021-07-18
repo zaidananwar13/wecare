@@ -70,7 +70,9 @@ class Auth extends BaseController
       $_SESSION['access_token'] = $client->getAccessToken();
 
       try {
+
         $plus = new \Google_Service_OAuth2($client);
+        var_dump($plus->userinfo->get()); die;
         $_SESSION['access_profile'] = $plus->userinfo->get();
 
       }catch(\Exception $e) {
