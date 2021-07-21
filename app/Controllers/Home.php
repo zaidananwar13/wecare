@@ -71,6 +71,7 @@ class Home extends BaseController
 				'page' => 'profile',
 				'status_1' => (getStatusMakanFromMail($email) != null) ? getStatusMakanFromMail($email) : '',
 				'status_2' => (getStatusOlahragaFromMail($email) != null) ? getStatusOlahragaFromMail($email) : '',
+				'userid' => getUserIdFromMail($email)
 			];
 
 			$data['status'] = null;

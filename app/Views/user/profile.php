@@ -249,7 +249,7 @@
 
   $.ajax({
     type: "GET",
-    url: "http://localhost/wecare/jadwal/get/5",
+    url: "http://localhost/wecare/jadwal/get/<?= $userid ?>",
     cache: false,
     data: { get_param: 'value' },
     dataType: 'json',
