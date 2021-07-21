@@ -33,400 +33,25 @@
 
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url() ?>/assets/user/assets/css/style.css" rel="stylesheet">
-
+  
   <style>
-    html *{
-    -webkit-font-smoothing: antialiased;
+    header {
+      background-color: #333333;
     }
 
-    .h6, h6 {
-        font-size: .75rem !important;
-        font-weight: 500;
-        font-family: Roboto,Helvetica,Arial,sans-serif;
-        line-height: 1.5em;
-        text-transform: uppercase;
+    #calendar {
+      max-width: 1100px;
+      min-height: 500px;
+      margin: 0 auto;
     }
-
-    .name h6 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    
-
-    a .material-icons {
-        vertical-align: middle;
-    }
-
-    .fixed-top {
-        position: fixed;
-        z-index: 1030;
-        left: 0;
-        right: 0;
-    }
-
-    .profile-page .page-header {
-        height: 380px;
-        background-position:center;
-    }
-
-    .page-header {
-        height: 100vh;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        display: flex;
-        align-items: center;
-    }
-
-    .header-filter:after, .header-filter:before {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        display: block;
-        left: 0;
-        top: 0;
-        content: "";
-    }
-
-    .header-filter::before {
-        background: rgba(0,0,0,.5);
-    }
-
-    .main-raised {
-        margin: -60px 30px 0;
-        border-radius: 6px;
-        box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
-    }
-
-    .main {
-        background: #FFF;
-        position: relative;
-        z-index: 3;
-    }
-
-    .profile-page .profile {
-        text-align: center;
-    }
-
-    .profile-page .profile img {
-        max-width: 160px;
-        width: 100%;
-        margin: 0 auto;
-        -webkit-transform: translate3d(0,-50%,0);
-        -moz-transform: translate3d(0,-50%,0);
-        -o-transform: translate3d(0,-50%,0);
-        -ms-transform: translate3d(0,-50%,0);
-        transform: translate3d(0,-50%,0);
-    }
-
-    .img-raised {
-        box-shadow: 0 5px 15px -8px rgba(0,0,0,.24), 0 8px 10px -5px rgba(0,0,0,.2);
-    }
-
-    .rounded-circle {
-        border-radius: 50%!important;
-    }
-
-    .img-fluid, .img-thumbnail {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .title {
-        margin-top: 30px;
-        margin-bottom: 25px;
-        min-height: 32px;
-        color: #3C4858;
-        font-weight: 700;
-        font-family: "Roboto Slab","Times New Roman",serif;
-    }
-
-    .profile-page .description {
-        margin: 1.071rem auto 0;
-        max-width: 600px;
-        color: #999;
-        font-weight: 300;
-    }
-
-    p {
-        font-size: 14px;
-        margin: 0 0 10px;
-    }
-
-    .profile-page .profile-tabs {
-        margin-top: 4.284rem;
-    }
-
-    .nav-pills, .nav-tabs {
-        border: 0;
-        border-radius: 3px;
-        padding: 0 15px;
-    }
-
-    .nav .nav-item {
-        position: relative;
-        margin: 0 2px;
-    }
-
-    .nav-pills.nav-pills-icons .nav-item .nav-link {
-        border-radius: 4px;
-    }
-
-    .nav-pills .nav-item .nav-link.active {
-        color: #fff;
-        background-color: #9c27b0;
-        box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
-    }
-
-    .nav-pills .nav-item .nav-link {
-        line-height: 24px;
-        font-size: 12px;
-        font-weight: 500;
-        min-width: 100px;
-        color: #555;
-        transition: all .3s;
-        border-radius: 30px;
-        padding: 10px 15px;
-        text-align: center;
-    }
-
-    .nav-pills .nav-item .nav-link:not(.active):hover {
-        background-color: rgba(200,200,200,.2);
-    }
-
-
-    .nav-pills .nav-item i {
-        display: block;
-        font-size: 30px;
-        padding: 15px 0;
-    }
-
-    .tab-space {
-        padding: 20px 0 50px;
-    }
-
-    .profile-page .gallery {
-        margin-top: 3.213rem;
-        padding-bottom: 50px;
-    }
-
-    .profile-page .gallery img {
-        width: 100%;
-        margin-bottom: 2.142rem;
-    }
-
-    .profile-page .profile .name{
-        margin-top: -80px;
-    }
-
-    img.rounded {
-        border-radius: 6px!important;
-    }
-
-    .tab-content>.active {
-        display: block;
-    }
-
-    /*buttons*/
-    .btn {
-        position: relative;
-        padding: 12px 30px;
-        margin: .3125rem 1px;
-        font-size: .75rem;
-        font-weight: 400;
-        line-height: 1.428571;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0;
-        border: 0;
-        border-radius: .2rem;
-        outline: 0;
-        transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1);
-        will-change: box-shadow,transform;
-    }
-
-    .btn.btn-just-icon {
-        font-size: 20px;
-        height: 41px;
-        min-width: 41px;
-        width: 41px;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-        line-height: 41px;
-    }
-
-    .btn.btn-just-icon fa{
-        margin-top: 0;
-        position: absolute;
-        width: 100%;
-        transform: none;
-        left: 0;
-        top: 0;
-        height: 100%;
-        line-height: 41px;
-        font-size: 20px;
-    }
-    .btn.btn-link{
-        background-color: transparent;
-        color: #999;
-    }
-
-    /* dropdown */
-
-
-
-
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 1000;
-        float: left;
-        min-width: 11rem !important;
-        margin: .125rem 0 0;
-        font-size: 1rem;
-        color: #212529;
-        text-align: left;
-        background-color: #fff;
-        background-clip: padding-box;
-        border-radius: .25rem;
-        transition: transform .3s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1);
-    }
-
-    .dropdown-menu.show{
-        transition: transform .3s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1);
-    }
-
-
-    .dropdown-menu .dropdown-item:focus, .dropdown-menu .dropdown-item:hover, .dropdown-menu a:active, .dropdown-menu a:focus, .dropdown-menu a:hover {
-        box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4);
-        background-color: #9c27b0;
-        color: #FFF;
-    }
-    .show .dropdown-toggle:after {
-        transform: rotate(180deg);
-    }
-
-    .dropdown-toggle:after {
-        will-change: transform;
-        transition: transform .15s linear;
-    }
-
-
-    .dropdown-menu .dropdown-item, .dropdown-menu li>a {
-        position: relative;
-        width: auto;
-        display: flex;
-        flex-flow: nowrap;
-        align-items: center;
-        color: #333;
-        font-weight: 400;
-        text-decoration: none;
-        font-size: .8125rem;
-        border-radius: .125rem;
-        margin: 0 .3125rem;
-        transition: all .15s linear;
-        min-width: 7rem;
-        padding: 0.625rem 1.25rem;
-        min-height: 1rem !important;
-        overflow: hidden;
-        line-height: 1.428571;
-        text-overflow: ellipsis;
-        word-wrap: break-word;
-    }
-
-    .dropdown-menu.dropdown-with-icons .dropdown-item {
-        padding: .75rem 1.25rem .75rem .75rem;
-    }
-
-    .dropdown-menu.dropdown-with-icons .dropdown-item .material-icons {
-        vertical-align: middle;
-        font-size: 24px;
-        position: relative;
-        margin-top: -4px;
-        top: 1px;
-        margin-right: 12px;
-        opacity: .5;
-    }
-
-    /* footer */
-
-    footer{
-        margin-top: 10px;
-        color: #555;
-        padding: 25px;
-        font-weight: 300;
-        
-    }
-    .footer p{
-        margin-bottom: 0;
-        font-size: 14px;
-        margin: 0 0 10px;
-        font-weight: 300;
-    }
-    footer p a{
-        color: #555;
-        font-weight: 400;
-    }
-
-    footer p a:hover {
-        color: #9f26aa;
-        text-decoration: none;
-    }
-
   </style>
+
 </head>
 
 <body>
-    
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
-    <div class="container d-flex align-items-center justify-content-lg-between">
+<?= view('user/_parts/nav') ?>
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">WeCare<span>.</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="<?php echo base_url() ?>/assets/user/assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">User Details</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <a href="#about" class="get-started-btn scrollto">Logout</a>
-
-    </div>
-  </header><!-- End Header -->
-
-  
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -448,7 +73,7 @@
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
         <div class="form-group">
-            <form action="<?php echo base_url('survey_action')?>" method="post">
+            <form action="<?php echo base_url('home/survey_action')?>" method="post">
                 <div class="row justify-content-center">
                     <div class="col-auto">
                         <table class="table">
@@ -964,36 +589,112 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>15. Kegiatan apa yang sering anda lakukan ketika anda selesai makan?</td>
+                                <td>16. Berapa kali kah kamu melakukan olahraga dalam 1 minggu</td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="tidur">
-                                        <label class="form-check-label" for="q15">
-                                            Tidur
+                                        <input class="form-check-input" type="radio" name="q16" id="q16" value="tidak">
+                                        <label class="form-check-label" for="q16">
+                                            Tidak pernah
                                         </label>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
+<<<<<<< HEAD
                                         <input class="form-check-input" type="radio" name="q15" id="q15" value="belajar">
                                         <label class="form-check-label" for="q15">
                                             Belajar
+=======
+                                        <input class="form-check-input" type="radio" name="q16" id="q16" value="jarang">
+                                        <label class="form-check-label" for="q16">
+                                            1/2 kali
+>>>>>>> ui
                                         </label>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="nonton">
-                                        <label class="form-check-label" for="q15">
-                                            Menonton
+                                        <input class="form-check-input" type="radio" name="q16" id="q16" value="kadang">
+                                        <label class="form-check-label" for="q16">
+                                            3-5 kali
                                         </label>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="berat">
-                                        <label class="form-check-label" for="q15">
-                                            Pekerjaan Berat
+                                        <input class="form-check-input" type="radio" name="q16" id="q16" value="sering">
+                                        <label class="form-check-label" for="q16">
+                                            6-7 kali
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>17. Berapa lama durasi setiap anda melakukan olahraga </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q17" id="q17" value="singkat">
+                                        <label class="form-check-label" for="q17">
+                                            < 10 menit
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q17" id="q17" value="sedang">
+                                        <label class="form-check-label" for="q17">
+                                            10-19 menit
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q17" id="q17" value="panjang">
+                                        <label class="form-check-label" for="q17">
+                                            20-29 menit
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q17" id="q17" value="sangat">
+                                        <label class="form-check-label" for="q17">
+                                            > 30 menit
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18. Seberapa besar intensitas anda setiap anda melakukan olahraga </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q18" id="q18" value="ringan">
+                                        <label class="form-check-label" for="q18">
+                                            Ringan
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q18" id="q18" value="sedang">
+                                        <label class="form-check-label" for="q18">
+                                            Sedang
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q18" id="q18" value="agak">
+                                        <label class="form-check-label" for="q18">
+                                            Agak berat
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="q18" id="q18" value="berat">
+                                        <label class="form-check-label" for="q18">
+                                            Berat
                                         </label>
                                     </div>
                                 </td>

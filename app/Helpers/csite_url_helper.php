@@ -78,3 +78,68 @@ if(!function_exists('getKeluhan')) {
 	}
 	
 }
+
+if(!function_exists('getKeluhanIdUser')) {
+	function getKeluhanIdUser($param = '') {
+		$model = new \App\Models\Konsultasi();
+		$data = $model->find($param);
+
+		return $data['id_user'];
+	}
+	
+}
+
+if(!function_exists('getKeluhanUserEmail')) {
+	function getKeluhanUserEmail($param = '') {
+
+		$model = new \App\Models\User();
+		$data = $model->find(getKeluhanIdUser($param));
+
+		return $data['email'];
+	}
+	
+}
+
+if(!function_exists('getKeluhanUserName')) {
+	function getKeluhanUserName($param = '') {
+
+		$model = new \App\Models\User();
+		$data = $model->find(getKeluhanIdUser($param));
+
+		return $data['nama'];
+	}
+	
+}
+
+if(!function_exists('getUserIdFromMail')) {
+	function getUserIdFromMail($param = '') {
+
+		$model = new \App\Models\User();
+		$data = $model->where('email', $param)->findAll();
+
+		return $data[0]['id_user'];
+	}
+	
+}
+
+if(!function_exists('getStatusMakanFromMail')) {
+	function getStatusMakanFromMail($param = '') {
+
+		$model = new \App\Models\User();
+		$data = $model->where('email', $param)->findAll();
+
+		return $data[0]['pola_makan'];
+	}
+	
+}
+
+if(!function_exists('getStatusOlahragaFromMail')) {
+	function getStatusOlahragaFromMail($param = '') {
+
+		$model = new \App\Models\User();
+		$data = $model->where('email', $param)->findAll();
+
+		return $data[0]['pola_olahraga'];
+	}
+	
+}
