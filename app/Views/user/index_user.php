@@ -100,7 +100,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-receipt"></i></div>
-              <h4><a href="<?php echo base_url('profile')?>">Atur Pola</a></h4>
+              <h4><a href="<?php echo base_url('check')?>">Atur Pola</a></h4>
               <p>Kami akan membantu kamu dalam menentukan pola hidup sehat, dimulai dari olahraga sampai jadwal makan</p>
             </div>
           </div>
@@ -108,7 +108,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="ri-calendar-todo-line"></i></div>
-              <h4><a href="#">Lihat Jadwal</a></h4>
+              <h4><a href="<?php echo base_url('profile')?>">Lihat Jadwal</a></h4>
               <p>Melihat jadwal yang sudah di tentukan, sesuai dengan kuisioner pada atur pola</p>
             </div>
           </div>
@@ -170,7 +170,7 @@
               <h4>Store Owner</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  Wow! ini sangat membantu saya dalam Keseharian saya yang Sibuk, Dan tekadang melupakan olahraga
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -183,7 +183,7 @@
               <h4>Freelancer</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  Luar biasa! WeCare dapat merevolusi gaya hidup saya menjadi yang lebih baik
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -196,7 +196,7 @@
               <h4>Entrepreneur</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                Saya harap banyak anak bangsa dapat membuat web seperti ini, Kerja Bagus!
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -228,7 +228,7 @@
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/zaidan.anwar15/"><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
@@ -246,7 +246,7 @@
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/harlemsulung/"><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
@@ -264,7 +264,7 @@
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.instagram.com/do_valdo_/"><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
