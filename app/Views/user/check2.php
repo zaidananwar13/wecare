@@ -600,15 +600,9 @@
                                 </td>
                                 <td>
                                     <div class="form-check form-check-inline">
-<<<<<<< HEAD
-                                        <input class="form-check-input" type="radio" name="q15" id="q15" value="belajar">
-                                        <label class="form-check-label" for="q15">
-                                            Belajar
-=======
                                         <input class="form-check-input" type="radio" name="q16" id="q16" value="jarang">
                                         <label class="form-check-label" for="q16">
-                                            1/2 kali
->>>>>>> ui
+                                            1-2 kali
                                         </label>
                                     </div>
                                 </td>
