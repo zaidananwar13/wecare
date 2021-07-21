@@ -62,14 +62,14 @@ class Dashboard extends BaseController
 
 				if(isset($request['submit'])) {
 
-					// $feedback->insert([
-					// 	'id_balasan' => null,
-					// 	'id_admin' => 1,
-					// 	'id_konsultasi' => $id,
-					// 	'balasan' => $request['balasan'],
-					// 	'tanggal' => date("Y-m-d"),
-					// 	'username' => $this->username
-					// ]);
+					$feedback->insert([
+						'id_balasan' => null,
+						'id_admin' => 1,
+						'id_konsultasi' => $id,
+						'balasan' => $request['balasan'],
+						'tanggal' => date("Y-m-d"),
+						'username' => $this->username
+					]);
 
 					$userEmail = getKeluhanUserEmail($id);
 					$userName = getKeluhanUserName($id);
