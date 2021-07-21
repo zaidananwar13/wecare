@@ -46,7 +46,7 @@
 
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
         <div class="col-lg-3">
-          <button class="btn btn-warning">Get Started</button>
+          <a href="<?php echo base_url('auth/user')?>" class="btn btn-warning">Get Started</a>
         </div>
       </div>
 
@@ -114,7 +114,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Konsultasi</a></h4>
+              <h4><a href="#contact">Konsultasi</a></h4>
               <p>Kami akan memberikan pelayanan konsultasi yang akan ditangani oleh admin yang kompeten di bidangnya </p>
             </div>
           </div>
@@ -392,7 +392,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"value="<?= isset($subject) ? $subject : ''  ?>" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" <?= isset($name) ? 'autofocus' : ''  ?> required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Complaint" <?= isset($name) ? 'autofocus' : ''  ?> required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
