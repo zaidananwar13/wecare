@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\User;
+
 class Auth extends BaseController
 {
   public function __construct()
@@ -72,6 +74,24 @@ class Auth extends BaseController
       try {
         $plus = new \Google_Service_OAuth2($client);
         $_SESSION['access_profile'] = $plus->userinfo->get();
+        $_SESSION['name'] = $_SESSION['access_profile']['name'];
+        $_SESSION['email'] = $_SESSION['access_profile']['email'];
+
+        $model = new User;
+        $state = $model->where('email', $_SESSION['access_profile']['email'])->findAll();
+
+        if(count($state) <= 0) {
+          $data = [
+            'nama' => $_SESSION['access_profile']['name'],
+            'email' => $_SESSION['access_profile']['email'],
+            'jenis_kelamin' => 'Unidentified',
+            'penyakit' => 'None',
+            'pola_makan' => 'None',
+            'pola_olahraga' => 'None'
+          ];
+
+          $model->insert($data);
+        }
 
       }catch(\Exception $e) {
         echo $e->__toString();
@@ -80,11 +100,16 @@ class Auth extends BaseController
         die;
       }
 
-      echo "<b> Controller/Auth.php line: 83 </b><br>";
-      echo "Kalo mau lanjut hapus ini ya :)"; die;
-
-      header('Location: ??');
+      header('Location: http://localhost/wecare/profile'); die;
     }
+  }
 
+  public function logout() {
+    $_SESSION['access_token'] = "";
+    $_SESSION['access_profile'] = "";
+
+    session_destroy();
+
+		return redirect()->to(csite_url()); 
   }
 }
