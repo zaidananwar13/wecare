@@ -57,7 +57,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>User Details</h2>
           <ol>
-            <li><a href="<?php echo base_url('index')?>">Home</a></li>
+            <li><a href="<?php echo base_url('')?>">Home</a></li>
             <li>User Details</li>
           </ol>
         </div>
