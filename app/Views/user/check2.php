@@ -4,25 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio Details - Gp Bootstrap Template</title>
+  
+  <title>Survey</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?php echo base_url() ?>/assets/user/assets/img/favicon.png" rel="icon">
-  <link href="<?php echo base_url() ?>/assets/user/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<?php echo base_url() ?>/assets/user/assets/img/w_logo.png" rel="icon">
+  <link href="<?php echo base_url() ?>/assets/user/assets/img/w_logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
-  <link rel="stylesgeet" href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css">
-
   <link href="<?php echo base_url() ?>/assets/user/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="<?php echo base_url() ?>/assets/user/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="<?php echo base_url() ?>/assets/user/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -33,6 +27,7 @@
 
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url() ?>/assets/user/assets/css/style.css" rel="stylesheet">
+  
   
   <style>
     header {
@@ -61,7 +56,8 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Survey</h2>
           <ol>
-            <li><a href="<?php echo base_url("profile")?>">Home</a></li>
+            <li><a href="<?php echo base_url("")?>">Home</a></li>
+            <li><a href="<?php echo base_url("profile")?>">User Details</a></li>
             <li>Survey</li>
           </ol>
         </div>
@@ -732,22 +728,10 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('')?>">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('')?>#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('')?>#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('')?>#team">Teams</a></li>
             </ul>
           </div>
         </div>
@@ -783,7 +767,9 @@
   <!-- Template Main JS File -->
   <script src="<?php echo base_url() ?>/assets/user/assets/js/main.js"></script>
 
-  <script>
+  
+
+  <!-- <script>
   var big_image;
 
   $(document).ready(function() {
@@ -1023,7 +1009,7 @@
 
   var survey = []; //Bidimensional array: [ [1,3], [2,4] ]
 
-  </script>
+  </script> -->
 </body>
 
 </html>
