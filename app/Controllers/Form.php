@@ -24,6 +24,7 @@ class Form extends BaseController
 
       if(count($status) > 0) {
         $dataKonsul['id_user'] = $status[0]['id_user'];
+
       }else {
         $data = [
           'nama' => $this->request->getPost('name'),
@@ -42,7 +43,7 @@ class Form extends BaseController
         $subject = "[S]" . $this->request->getPost('subject') . "[S]\n";
         $message = $subject . $this->request->getPost('message');
       }
-
+      
       $konsultasi = new \App\Models\Konsultasi();
       $konsultasi->insert($dataKonsul);
     }else {

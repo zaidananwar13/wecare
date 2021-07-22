@@ -33,6 +33,11 @@ class Home extends BaseController
 
 		#session check here
 		if(isset($_SESSION['access_profile']))
+			$data = [
+				"name" => $_SESSION['access_profile']['name'],
+				"email" => $_SESSION['access_profile']['email'],
+				
+			];
 
 			return view('user/index_user', $data);
 		

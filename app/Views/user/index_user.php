@@ -324,6 +324,8 @@
 
             <form action="<?= csite_url('form/post') ?>" method="post" role="form" class="php-email-form">
               <div class="form-group mt-3">
+                <input type="hidden" class="form-control" name="name" id="subject" placeholder="Subject" value="<?= $name ?>" required>
+                <input type="hidden" class="form-control" name="email" id="subject" placeholder="Subject" value="<?= $email ?>" required>
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
